@@ -39,8 +39,8 @@ There were three layers total for the initial model (AlphabetSoupCharity.ipynb) 
 The number of input parameters were 43 for the first model and 5,981 parameters were created by a three-layer training model. The first attempt was just over 72.8 % accuracy which was under the desired 75%.
 
 <img width="558" alt="model1train" src="https://github.com/debralisa/deep-learning-challenge/assets/123344011/66a335b0-d174-417c-8e93-b5408bda7ae5">
-![hist_acc_model1](https://github.com/debralisa/deep-learning-challenge/assets/123344011/ce6aa864-9141-498f-b2b0-d3741a851104)
-![hist_loss_model1](https://github.com/debralisa/deep-learning-challenge/assets/123344011/abb8607c-0348-4dbe-9c53-4522c730d65a)
+<img width="366" alt="hist_acc_model1" src="https://github.com/debralisa/deep-learning-challenge/assets/123344011/e30a6f1b-9ea1-4957-8ad3-a0ddb2a030e3">
+<img width="312" alt="hist_loss_model1" src="https://github.com/debralisa/deep-learning-challenge/assets/123344011/68f8590d-9355-4504-8d6a-a045f95b5b20">
 
 
 ## Optimization
@@ -49,12 +49,15 @@ The second attempt with the “NAME” column in the dataset changed the input p
 
 <img width="570" alt="model_opt1" src="https://github.com/debralisa/deep-learning-challenge/assets/123344011/5e39e4cb-7b68-4754-b2b4-990f7cac90f9">
 <img width="562" alt="model_optimize1train" src="https://github.com/debralisa/deep-learning-challenge/assets/123344011/f6d224ba-8291-46f5-890c-d2689f0a15fa">
-![hist_acc_opt1](https://github.com/debralisa/deep-learning-challenge/assets/123344011/57ed91d6-c725-453e-aeaa-435165392019)
-![hit_loss_opt1](https://github.com/debralisa/deep-learning-challenge/assets/123344011/5abc84c1-81b0-477f-8df7-c8c3105deb53)
+
+<img width="325" alt="hist_acc_opt1" src="https://github.com/debralisa/deep-learning-challenge/assets/123344011/d3a13fe9-cf05-4249-909b-8c4818ae9fb9">
+<img width="341" alt="hist_loss_opt1" src="https://github.com/debralisa/deep-learning-challenge/assets/123344011/626abb34-c384-4a97-bfcb-de87b520d7df">
 
 I did train a 3rd model.  I was really determined to improve not just on the predicted accuracy but also with the predicted loss. 453 input parameters were in this final model. 7,039 parameters were created by a four-layer training model with 15, 9 and 9  neurons in the hidden layers respectively.  I continued with the "NAME" column in the dataset and binning but this time used keras-tuner to achieve an accuracy of 79% and improved the predicted loss from 56% in the initial model, to 46.5% in the first Optimization model and finally to 43.7%.
 
 <img width="636" alt="modeltrainopt2" src="https://github.com/debralisa/deep-learning-challenge/assets/123344011/52ec855f-b4da-4429-903d-8f1239d7eb82">
+
+
 
 ## Conclusion
 
