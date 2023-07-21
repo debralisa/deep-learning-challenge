@@ -20,11 +20,9 @@ IS_SUCCESSFUL—Was the money used effectively
 
 ## Results
 
-Data processing began with removing irrelevant information by dropping the EIN and NAME identification columns.  The IS_SUCCESSFUL column was identified and assigned the target variable for the initial model and the remaining columns were to be considered features for the model.
-
-In the second and third tests (AlphabetSoupCharity_Optimization.ipynb and AlphabetSoupCharity_Optimization2.ipynb), NAME identification column was added back for binning purposes. The data was then split for training and testing sets. 
-
-For all 3 tests, the target variable for the model was labeled “IS_SUCCESSFUL” and had the value of 1 for yes and 0 for no. APPLICATION_TYPE and CLASSIFICATION value was used for binning. Several data points were used as a cutoff to bin “rare” variables together with the new value of “Other” for each unique value. Categorical variables were encoded by get_dummies() after checking to see if the binning was successful.
+1.Data processing began with removing irrelevant information by dropping the EIN and NAME identification columns.  The IS_SUCCESSFUL column was identified and assigned the target variable for the initial model and the remaining columns were to be considered features for the model.
+2.In the second and third tests (AlphabetSoupCharity_Optimization.ipynb and AlphabetSoupCharity_Optimization2.ipynb), NAME identification column was added back for binning purposes. The data was then split for training and testing sets. 
+3.For all 3 tests, the target variable for the model was labeled “IS_SUCCESSFUL” and had the value of 1 for yes and 0 for no. APPLICATION_TYPE and CLASSIFICATION value was used for binning. Several data points were used as a cutoff to bin “rare” variables together with the new value of “Other” for each unique value. Categorical variables were encoded by get_dummies() after checking to see if the binning was successful.
 
 ## Compiling, Training, and Evaluating the Model
 
@@ -57,13 +55,17 @@ History_accuracy
 History_loss
 <img width="341" alt="hist_loss_opt1" src="https://github.com/debralisa/deep-learning-challenge/assets/123344011/626abb34-c384-4a97-bfcb-de87b520d7df">
 
-I did train a 3rd model.  I was really determined to improve not just on the predicted accuracy but also with the predicted loss. 453 input parameters were in this final model. 7,039 parameters were created by a four-layer training model with 15, 9 and 9  neurons in the hidden layers respectively.  I continued with the "NAME" column in the dataset and binning but this time used keras-tuner to achieve an accuracy of 79% and improved the predicted loss from 56% in the initial model, to 46.5% in the first Optimization model and finally to 43.7%.
+I did train a 3rd model.  I was really determined to improve not just on the predicted accuracy but also with the predicted loss. 453 input parameters were in this final model. 7,039 parameters were created by a four-layer training model with 15, 9 and 9 neurons in the hidden layers respectively and 50 epochs.  I continued with the "NAME" column in the dataset and binning but this time used keras-tuner to achieve an accuracy of 79% and improved the predicted loss from 56% in the initial model, to 46.5% in the first Optimization model and finally to 43.7%.
 
 <img width="636" alt="modeltrainopt2" src="https://github.com/debralisa/deep-learning-challenge/assets/123344011/52ec855f-b4da-4429-903d-8f1239d7eb82">
 
+History_accuracy
 
 
-## Conclusion
+History_loss
 
+## Summary
 
+As evidenced from the above visualizatios, the adjustments for modifications did indeed optimize the model to higher than 75% accuracy.  Adjusting the number of epochs did not appear to make a large change in the results.  However, the hidden layers, neurons per hidden layer, adding the "NAME" column and bins, as well as changing the activation functions made large differences in the optimized models. 
 
+I believe making other modifications to the kerastuner would be a good model to continue on an optimized solution.   There are many parameters still to consider when performig the model.  The improvements from my adjustments are a testiment to the viability of this model.
