@@ -69,3 +69,11 @@ History_loss
 As evidenced from the above visualizatios, the adjustments for modifications did indeed optimize the model to higher than 75% accuracy.  Adjusting the number of epochs did not appear to make a large change in the results.  However, the hidden layers, neurons per hidden layer, adding the "NAME" column and bins, as well as changing the activation functions made large differences in the optimized models. 
 
 I believe making other modifications to the kerastuner would be a good model to continue on an optimized solution.   There are many parameters still to consider when performig the model.  The improvements from my adjustments are a testiment to the viability of this model.
+
+## Files
+
+Readme.md (file containing analysis), AlphabetSoupCharity,ipynb, AlphabetSoupCharity_Optimization.ipynb, AlphabetSoupCharity_Optimization2.ipynb, output_data folder: AlphabetSoupCharity.h5, AlphabetSoupCharity_Optimization.h5, AlphabetSoupCharity_Optimization2.h5, several visualization files (.png files)
+
+## Sources
+
+RUTDataViz Bootcamp activities, Starter code files from challenge, playground.tensorflow.org.
