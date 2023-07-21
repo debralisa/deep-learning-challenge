@@ -55,14 +55,10 @@ History_accuracy
 History_loss
 <img width="341" alt="hist_loss_opt1" src="https://github.com/debralisa/deep-learning-challenge/assets/123344011/626abb34-c384-4a97-bfcb-de87b520d7df">
 
-I did train a 3rd model.  I was really determined to improve not just on the predicted accuracy but also with the predicted loss. 453 input parameters were in this final model. 7,039 parameters were created by a four-layer training model with 15, 9 and 9 neurons in the hidden layers respectively and 50 epochs.  I continued with the "NAME" column in the dataset and binning but this time used keras-tuner to achieve an accuracy of 79% and improved the predicted loss from 56% in the initial model, to 46.5% in the first Optimization model and finally to 43.7%.
+I did train a 3rd model.  I was really determined to improve not just on the predicted accuracy but also with the predicted loss. 453 input parameters were in this final model. 4,145 parameters were created by a four-layer training model with 9, 1 and 19 neurons in the hidden layers respectively and 50 epochs.  I continued with the "NAME" column in the dataset and binning but this time used keras-tuner to achieve an accuracy of 79.5% and improved the predicted loss from 56% in the initial model, to 46.5% in the first Optimization model and finally to 43.9%. The best model had the activation function set to sigmoid, which also was a modification from the initial model and the first optimization model which were set as relu.
 
 <img width="636" alt="modeltrainopt2" src="https://github.com/debralisa/deep-learning-challenge/assets/123344011/52ec855f-b4da-4429-903d-8f1239d7eb82">
 
-History_accuracy
-
-
-History_loss
 
 ## Summary
 
